@@ -181,14 +181,56 @@ import "./App.css";
 //   );
 // };
 
+// export const App: FunctionComponent = () => {
+//   const [state, setState] = useState(true);
+
+//   console.log(state);
+
+//   const changeState = () => {
+//     setState((current) => !current);
+//   };
+
+//   return <div>{<button onClick={changeState}>Change state</button>} </div>;
+// };
+
+//// Zadatak 1.
+
+// export const App: FunctionComponent = () => {
+//   const [state, setState] = useState(true);
+
+//   console.log(state);
+
+//   const changeState = () => {
+//     setState((current) => !current);
+//   };
+
+//   return (
+//     <div>
+//       {<input type="checkbox" checked={state} onChange={changeState} />}{" "}
+//       <p> {state ? "Promjenite tekst!" : "Opet promjenite tekst!"}</p>
+//     </div>
+//   );
+// };
+
+//// zadatak 2.
+
 export const App: FunctionComponent = () => {
-  const [state, setState] = useState(true);
+  const [state, setState] = useState(0);
 
   console.log(state);
 
-  const changeState = () => {
-    setState((current) => !current);
+  const plusState = () => {
+    setState(state + 1);
+  };
+  const minusState = () => {
+    setState(state - 1);
   };
 
-  return <div>{<button onClick={changeState}>Change state</button>} </div>;
+  return (
+    <div>
+      <button onClick={plusState}>+1</button>
+      <button onClick={minusState}>-1</button>
+      <p>Rezultat: {state}</p>
+    </div>
+  );
 };
