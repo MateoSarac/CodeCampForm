@@ -10,7 +10,7 @@ export const WelcomePage: FC = () => {
 
   return (
     <div>
-      <h1>Welcome {user.name}. </h1>
+      <h1>Welcome {user.name}! </h1>
       <h2>Your email: {user.email}</h2>
       <h2>Your gender: {user.gender}</h2>
       <h2>Your country: {user.country}</h2>
