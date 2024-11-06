@@ -1,0 +1,71 @@
+@import "../../scss/colors/color-palete.scss";
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+
+  &__login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 300px;
+    padding: 20px 50px;
+    background-color: rgb(236, 234, 234);
+    border: 3px solid #bbbbbc;
+    border-radius: 8px;
+  }
+
+  &__login-button {
+    position: relative;
+    font-style: oblique;
+    color: rgb(252, 248, 248);
+    font-size: 1.5rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0056b3;
+    transition: background-color 0.3 ease;
+    margin-left: 50px;
+    width: 200px;
+
+    &:hover {
+      background-color: #82b1e3;
+    }
+  }
+
+  &__register-button {
+    padding: 10px 20px;
+    font-style: oblique;
+    margin-top: 50px;
+    color: rgb(255, 252, 252);
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0056b3;
+    transition: background-color 0.3 ease;
+
+    &:hover {
+      background-color: #82b1e3;
+    }
+  }
+  label {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  input {
+    height: 30px;
+    border: 2px solid;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,40 @@
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+
+  &__welcome-card {
+    padding: 20px 50px;
+    background-color: rgb(236, 234, 234);
+    border: 3px solid #bbbbbc;
+    border-radius: 8px;
+  }
+  h2 {
+    padding-top: 15px;
+  }
+
+  &__welcome-button {
+    position: relative;
+    font-style: oblique;
+    color: rgb(250, 247, 247);
+    font-size: 1.5rem;
+    margin: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0056b3;
+    transition: background-color 0.3 ease;
+    margin-left: 50px;
+    width: 200px;
+
+    &:hover {
+      background-color: #82b1e3;
+    }
+  }
+}
