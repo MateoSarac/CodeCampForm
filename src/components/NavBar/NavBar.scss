@@ -1,0 +1,29 @@
+.navBar {
+  background-color: #a5bcd5;
+  height: 70px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  button {
+    position: relative;
+    font-style: oblique;
+    color: rgb(250, 247, 247);
+    font-size: 1.5rem;
+    margin: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0056b3;
+    transition: background-color 0.3 ease;
+    align-self: flex-end;
+
+    &:hover {
+      background-color: #82b1e3;
+    }
+  }
+}

@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.blueBtn {
+  background-color: darkblue;
+}
+.normalBtn {
+  background-color: #0056b3;
+}
